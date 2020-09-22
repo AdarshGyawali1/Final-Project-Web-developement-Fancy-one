@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>FIT WITH AG</title>
+	<meta name="viewport" content="width=device-width" , initial-scale="1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Ubuntu&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+	<header class="mainpage">
+		<nav>
+			<div class="main">
+				<h1> FIT WITH AG</h1>
+			</div>
+
+			<div class="main2">
+				<ul>
+					<li class="b"><a href="index.html"target="_blank">Home</a></li>
+					<li class="c"><a href="table.html"target="_blank">Table</a></li>
+					<li class="d"> <a href="gallery.html"target="_blank">GALLERY</a></li>
+					<li class="e"><a href="contactus.html"target="_blank">CONTACT US</a></li>
+					<li class="f"><a href="faq.html"target="_blank"> (FAQ)</a></li>
+					<li class="g"><a href="price.html"target="_blank"> Price</a></li>
+					
+				</ul>
+			</div>
+		</nav>
+
+
+		<section>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="gallery/d.jpg">
+					<!-- <div class="text">a guitar</div> -->
+				</div>
+				<div class="mySlides fade">
+					<img src="gallery/c.jpg">
+					<!-- <div class="text">a violen</div> -->
+				</div>
+				<div class="mySlides fade">
+					<img src="gallery/b.jpg">
+					<!-- <div class="text">a girl playing instrument</div> -->
+				</div>
+			</div>
+			<div style="text-align:center">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+			<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {
+						slideIndex = 1
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex - 1].style.display = "block";
+					dots[slideIndex - 1].className += " active";
+					setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+			</script>
+			<div class="anotherside">
+				<h1> Ready To Get Pumped</h1>
+				<p1>Let the <b>Journey</b> Begin</p1><br>
+				<button> <a href="C:\Users\OneDrive\Desktop\it final assignment\final project\homepage\table.html"> Join US</a> </button>
+			</div>
+		</section>
+			
+		<br />
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112658.43396610433!2d81.559406928537!3d28.06796620494383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3998675a30f8e175%3A0x93c04013828c9891!2sNepalgunj!5e0!3m2!1sen!2snp!4v1600797413125!5m2!1sen!2snp" width="1520" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		
+		<footer class="tablefooter">
+				<a class="i" href="index.html">Home</a>
+				| <a class="ii" href="gallery.html">GALLERY</a>
+				| <a class="iii" href="contactus.html">Contact</a>
+				| <a class="v" href="C:\Users\OneDrive\Desktop\it final assignment\final project\homepage\table.html">Information</a>
+				| <a class="iv" href="faq.html"> FAQ </a> <br>
+				
+				<a class="iv" href="">sitemap</a>
+
+				<p><b>© 2020 Adarsh Gyawali</b></p>
+		</footer>
+	</header>
+</body>
+
+</html>
